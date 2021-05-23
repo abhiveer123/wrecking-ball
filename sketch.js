@@ -9,9 +9,7 @@ var box1, pig1;
 var backgroundImg;
 var platform;
 var ball,roof,rope,boxes=[]
-function preload() {
-    backgroundImg = loadImage("sprites/bg.png");
-}
+
 
 function setup(){
     var canvas = createCanvas(1200,400);
@@ -35,7 +33,7 @@ for(var i=0;i<7;i++){
 }
 
 function draw(){
-    background(backgroundImg);
+   background(0)
     Engine.update(engine);
     roof.display()
     ground.display();
